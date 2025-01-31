@@ -17,7 +17,7 @@
             <div class="navbar">
                 <div><i class="fa-solid fa-bars svg"></i></div>
                 <div><a href="index.html">SHOP</a></div>
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
             </div>
         </nav>
         <div class="checkout-header">
@@ -56,8 +56,27 @@
                         <div class="billing-info">
                             <h2 class="headers">Billing Address</h2>
                             <div class="billing">
-                                <input type="checkbox">
-                                <label for="">Use different billing address</label>
+                                <input class="hiding-check" type="checkbox">
+                                <label for="" class="billing-label">Use different billing address</label><br>
+
+                                <!-- hiding container -->
+                               <div class="hiding-container">
+                                <input type="address" name="address" placeholder="Address" required class="input-info"><br>
+                                <input type="text" placeholder="City" name="city" required class="input-info"><br>
+    
+                                <div class="state-province">
+                                    <input type="text" placeholder="State/Province" name="state" required
+                                        class="input-info">
+                                    <input type="text" placeholder="Zip/Postal Code" required class="input-info">
+                                </div>
+    
+                                <label class="country">Country</label><br>
+                                <select name="country" required class="country-select">
+                                    <option value="United States">United States</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                               </div>
+                                 <!-- hide end -->
                             </div>
                         </div>
                     </div>
@@ -107,7 +126,7 @@
 
                         </div>
                     </div>
-                    <h2 class="headers">Order Summary</h2>
+                    <h2 class="headers summary" >Order Summary</h2>
                     <div class="order-info">
                         <div class="row order-summary">
                             <div>YouTube Ultimate Hooded Sweatshirt</div>
@@ -133,6 +152,10 @@
             </div>
             <footer>
                 <button type="submit" class="place-order">PLACE ORDER</button>
+                <div class="company-label">
+                    <a href="">Made by Polymer</a>
+                    <div class="demo">DEMO ONLY</div>
+                </div>
             </footer>
         </form>
     </div>
