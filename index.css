@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* HOME PAGE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto ;
+}
+/*HOME PAGE NAVIGATIONAL LINKS */
+.navbar{
+    height: 64px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:15px ;
+    padding-right: 15px;
+    font-size: x-small;
+}
+.navbar a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: x-small;
+    font-weight: bold;
+    color: black;
+}
+/* HOME PAGE IMAGE - BUTTON - HEADING SECTION*/
+.men-image,.ladies-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.men, .ladies{
+    text-align: center;
+}
+.men-image{
+    background-image: url(./images/mens_outerwear.jpg);
+}
+.ladies-image{
+    background-image: url(./images/ladies_outerwear.jpg);
+    margin-top: 50px;
+}
+.men h2,.ladies h2{
+    font-size: small;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-weight: 350;
+}
+.shop-button{
+   padding: 8px 44px 8px 44px;
+   border: 2px solid black;
+   text-decoration: none;
+   color: black;
+   font-weight: 350;
+   font-size: x-small;
+}
+.men, .ladies{
+    text-align: center;
+}
+.men-three,.ladies-four{
+    height: 40vh;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.men-item,.ladies-item{
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tshirt-text{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.tshirt-button{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 0px 10px 0px ;
+    font-size: x-small;
+    font-weight: 300;
+    width: 150px;
+    color: black;
+    align-self: center;
+}
+.men-three{
+    background-image: url(./images/mens_tshirts.jpg);
+}
+.ladies-four{
+    background-image: url(./images/ladies_tshirts.jpg);
+}
+.both-products{
+    display: flex;
+    flex-direction: row;
+}
+/* HOME PAGE FOOTER */
+.company-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company-label a{
+    text-decoration: none;
+    font-size: xx-small;
+    color: gray;
+}
+.demo{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+    padding:8px 20px 8px 20px;
+    margin-top: 10px;
+}
+/* HOME PAGE DESKTOP MENU ICONS  */
+.desktop-menu{
+    display: none;
+    font-size: x-small;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.desktop-items{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.items{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+}
+/* MEN OUTERWEAR */
+.men-heading{
+    text-align: center;
+}
+.men-heading h1{
+    font-size: x-small;
+    margin-top: 24px;
+    font-weight: 350;
+}
+.men-heading span{
+    font-size: xx-small;
+    color: gray;
+}
+.men-shop-item{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+.men-shop-item ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 25px;
+    max-width: 100%;
+}
+.men-shop-item li a{
+    text-decoration: none;
+}
+.men-list-item img{
+    width:40.8vw ;
+}
+.men-list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.men-list-title{
+    font-size: xx-small;
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.men-list-price{
+    font-size: xx-small;
+    color: rgb(118, 107, 107);
+    margin-top: 4px;
+}
+/* Hiding Image In Mobile version */
+.ladiesOuterWear,.ladiesTshirts,.menOuterWear,.menTshirts{
+    display: none;
+   }
+
+   /* single item page */
+   .single-container{
+    width: 100%;
+   }
+   .container-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: center;
+   
+   }
+   .single-page-image{
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    max-width: 500px;
+   }
+   .second-container{
+    padding: 24px;
+   }
+   .image-title{
+    font-size: 20px;
+    font-weight: 350;
+   }
+   .image-price{
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    color: gray;
+   }
+
+   .size-dropdown,.quantity-dropdown{
+    position: relative;
+   }
+    .size,.quantity{
+        font-size: 14px;
+        position: absolute;
+        top: 30%;
+        color: gray;
+    }
+   
+    .size-select,.quantity-select{
+        width: 100%;
+        border: none;
+        padding: 16px 24px 16px 74px;
+        background: transparent;
+        outline: none;
+        font-size: 15px;
+    }
+    .description{
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .description h2{
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: 600;
+    }
+    .description p{
+        font-size: x-small;
+        color: gray;
+        line-height: 1.5;
+    }
+    .description h4{
+        font-size: 13px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: gray;
+    }
+    .single-list{
+        font-size: 13px;
+        color: gray;
+        padding-left:30px ;
+        line-height: 1.5;
+    }
+    .add-to-cart button{
+        width: 100%;
+        height: 100%;
+        height: 8vh;
+        background-color: rgb(7, 7, 73);
+        position: fixed;
+        bottom: 0px;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 20px;
+    }
+    .desktop-cart{
+        display: none;
+    }
+    .desktop-cart button{
+        padding: 8px 44px;
+        text-align: center;
+        background-color: white;
+        margin-top: 20px;
+    }
+    /* checkout page */
+    .main-cart{
+        width: 100%;
+    }
+    .checkout-details{
+        padding: 20px;
+    }
+    .checkout-header{
+        text-align: center;
+    }
+    .checkout-header>h1{
+        font-weight: 350;
+        font-size: 20px;
+        margin: 0px 0px 4px 0px;
+    }
+    .checkout-header>span{
+        font-size: 13px;
+        color: gray;
+    }
+    .headers{
+        font-size: 13px;
+        padding: 20px 0px 0px 0px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .input-info{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        padding-top: 30px;
+        padding-bottom:10px ;
+        outline: none;
+    }
+    .state-province{
+        display: flex;
+        /* padding: 5px; */
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+  .country{
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .country-select{
+        width: 100%;
+        outline: none;
+        border: none;
+        background: transparent;
+        padding-top:5px ;
+        padding-bottom: 20px;
+    }
+    .billing{
+        display: flex;
+        padding-top: 10px;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .billing label{
+        font-size: 16px;
+    }
+    .billing input{
+        width: 18px;
+        height: 18px;
+    }
+    .second-checkout-container{
+        padding: 20px;
+    }
+    .payment-method{
+        margin-bottom: 25px;
+    }
+    .expiry-container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 5px;
+    }
+    .expiry-container select{
+        outline: none;
+        border: none;
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding-top: 30px;
+        padding-bottom:10px ;
+    }
+    .expiry{
+        font-size: 15px;
+        position: absolute;
+        top: 0px;
+    }
+    .month,.year,.input-info{
+        flex: 1;
+    }
+    .order-info{
+        margin: 30px 0px 200px 0px ;
+    }
+    .order-summary{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+    }
+    .row div{
+        font-size: 13px;
+        line-height: 2;
+    }
+    .checkout-total{
+        margin-top: 30px;
+        font-weight: 300;
+    }
+    .place-order{
+        position: fixed;
+        bottom: 0px;
+        background-color: rgb(11, 11, 71);
+        height: 8vh;
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: small;
+    }
+    .desktop-order{
+        display: none;
+    }
+    .desktop-order button{
+        padding: 8px 44px;
+        text-align: center;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    /* CART CSS PAGE */
+    .your-cart-heading{
+        text-align: center;
+        margin-bottom: 60px;    
+    }
+    .your-cart-heading h1{
+        font-size: x-small;
+        margin-top: 5px;
+        font-weight: 350;
+    }
+    .your-cart-heading span{
+        font-size: xx-small;
+        color: gray;
+    }
+
+
+  .cart-main-container{
+    width: 100%;
+    padding:0px 20px 0px 20px;
+  }
+  .cart-image{
+    width: 72px;
+    height: 72px;
+    margin: 0px 20px -10px 0px;
+
+  }
+  .cart-items-conatiner{
+    display: flex;
+    align-items: center;
+  }
+  .add-cart-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    gap: 10px;
+  }
+  .cart-details{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .size-quantity-price{
+    display: flex;
+    flex-direction: column;
+  }
+  .details{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+  }
+  .details a{
+    text-decoration: none;
+    color: black;
+  }
+  .fa-xmark{
+    color: gray;
+  }
+  .quantity-price{
+    font-size: 15px;
+    color: gray;
+  }
+  .cart-select{
+    outline: none;
+    border: none;
+    background: transparent; 
+  }
+  .cart-size{
+    font-size: 15px;
+    color: gray;
+  }
+  .cart-price{
+    font-size: 15px;
+    color: gray;
+  }
+  .checkout-button{
+    position: fixed;
+    bottom: 0;
+  }
+  .checkout-button button{
+        width: 100%;
+        height: 100%;
+        height: 8vh;
+        background-color: rgb(7, 7, 73);
+        position: fixed;
+        bottom: 0px;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 20px;
+        letter-spacing: 2px;
+  }
+  .cart-main-container{
+    margin-bottom: 40px;
+  }
+  .desktop-cross-mark{
+    display: none;
+  }
+  .desktop-checkout button{
+        display: none;
+        padding: 8px 44px;
+        text-align: center;
+        background-color: white;
+        margin-top: 20px;
+  }
+  .desktop-total{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+  }
+
+
+@media(min-width:370px){
+    .size-quantity-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+      }
+      .quantity-select-item{
+        padding: 0px 24px 0px 0px;
+        min-width: 70px;
+      }
+      .cart-price{
+        min-width: 70px;
+        text-align: right;
+        padding: 0px 15px 0px 15px;
+      }
+      .cart-size{
+        text-align: right;
+        padding: 0px 15px 0px 15px;
+      }
+     
+      .total{
+       text-align: right;
+       font-size: 14px;
+       font-weight: 500;
+       margin-right: 20px;
+      }
+      .sub-total{
+        margin-left: 25px;
+      }
+      
+     
+
+}
+
+    
+@media(min-width:780px){
+    /* Home Page desktop menu icons */
+    .fa-bars{
+        display: none !important;
+    }
+   .ladiesOuterWear,.ladiesTshirts,.menOuterWear,.menTshirts{
+    display:contents;
+   }
+   .menTshirts,.ladiesTshirts{
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+   .men-three,.ladies-four{
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+
+    .men-image,.ladies-image{
+        height: 38vh;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .both-products{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .desktop-menu{
+        display: block;
+    }
+    /* men-desktop */
+    .men-shop-item{
+        width: 100%;
+    }
+    .men-shop-item ul{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .men-list-item img{
+        padding: 10px;
+        width: 20vw;
+    }
+    .men-list-title{
+        font-size: 12px;
+    }
+    .add-to-cart{
+        display: none;
+    }
+    .desktop-cart{
+        display: contents;
+    }
+    .container-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .single-page-image{
+       width: 100%;
+       max-width: 600px;
+       display: flex;
+       align-self: start;
+       justify-self: end;
+    }
+    .description{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .second-container{
+       width: 70%;
+    }
+    .place-order{
+        display: none;
+    }
+    .desktop-order{
+        display:contents;
+    }
+    .checkout-header{
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+        margin-left:15%;
+        margin-right: 25%;
+    }
+    .order-info{
+        margin:  0px ;
+    }
+    .first-checkout-container{
+        width: 30vw;
+        max-width: 40vw;
+    }
+    .second-checkout-container{
+        width: 30vw;
+        max-width: 40vw;
+    }
+    .checkout-button{
+        display: none;
+    }
+    .add-cart-details{
+        display: flex;
+        flex-direction: row;
+    }
+    .cross-mark{
+        display: none;
+    }
+    .desktop-cross-mark{
+        display: contents;
+    }
+   .details{
+    width: 200px;
+   }
+   .quantity-price{
+    width: 200px;
+   }
+    .desktop-checkout button{
+        display: contents;
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+        margin-left: 30px   ;
+    }
+    .size-quantity-price{
+        justify-content: space-between;
+    }
+
+    .desktop-total{
+            /* display: flex;
+            flex-direction: row;
+            justify-content:end; */
+            text-align: right;
+    }
+        
+
+    .main-cart-sub{
+        padding: 0px 30px 0px 30px;
+    }
+    .main-cart-sub{
+        margin: 0 auto;
+    }
+    
+    .your-cart-heading{
+        padding-top: 40px;
+    }
+    .cart-main-container{
+        margin-bottom: 20px;
+    }
+    .main-cart-checkout{
+        margin: 0px ;
+     }
+
+     
+}
+@media(min-width:1090px){
+    .main-cart-checkout{
+        margin: 0px 10%;
+     }
+}
