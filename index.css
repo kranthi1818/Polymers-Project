@@ -93,13 +93,11 @@
 }
 .men-three{
     background-image: url(./images/mens_tshirts.jpg);
-    margin-right: 5%;
     margin-left: 5%;
 }
 .ladies-four{
     background-image: url(./images/ladies_tshirts.jpg);
     margin-right: 5%;
-    margin-left: 5%;
 }
 .both-products{
     display: flex;
@@ -639,13 +637,13 @@
 
     .men-image,.ladies-image{
         height: 38vh;
+        /* margin-right: 5%;
+        margin-left: 5%; */
+    }
+    /* .both-products{
         margin-right: 5%;
         margin-left: 5%;
-    }
-    .both-products{
-        margin-right: 5%;
-        margin-left: 5%;
-    }
+    } */
     .desktop-menu{
         display: block;
     }
