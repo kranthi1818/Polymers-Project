@@ -93,11 +93,9 @@
 }
 .men-three{
     background-image: url(./images/mens_tshirts.jpg);
-    margin-left: 5%;
 }
 .ladies-four{
     background-image: url(./images/ladies_tshirts.jpg);
-    margin-right: 5%;
 }
 .both-products{
     display: flex;
@@ -646,9 +644,11 @@
     }
     .men-three-desktop{
         margin-right: 5%;
+        margin-left: 5%;
     }
     .ladies-four-desktop{
         margin-left: 5%;
+        margin-right: 5%;
     }
 
     .desktop-menu{
