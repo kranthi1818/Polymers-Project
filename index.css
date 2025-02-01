@@ -640,10 +640,17 @@
         margin-right: 3%;
         margin-left: 3%;
     }
-    /* .both-products{
+    .both-products{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .men-three-desktop{
         margin-right: 5%;
+    }
+    .ladies-four-desktop{
         margin-left: 5%;
-    } */
+    }
+
     .desktop-menu{
         display: block;
     }
