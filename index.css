@@ -93,9 +93,13 @@
 }
 .men-three{
     background-image: url(./images/mens_tshirts.jpg);
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .ladies-four{
     background-image: url(./images/ladies_tshirts.jpg);
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .both-products{
     display: flex;
@@ -632,19 +636,15 @@
     margin-right: 20px;
     margin-left: 20px;
    }
-   .men-three,.ladies-four{
-    margin-right: 20px;
-    margin-left: 20px;
-   }
 
     .men-image,.ladies-image{
         height: 38vh;
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 5%;
+        margin-left: 5%;
     }
     .both-products{
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 5%;
+        margin-left: 5%;
     }
     .desktop-menu{
         display: block;
@@ -686,7 +686,7 @@
         margin-bottom: 0px;
     }
     .second-container{
-       width: 70%;
+       width: 50%;
     }
     .place-order{
         display: none;
